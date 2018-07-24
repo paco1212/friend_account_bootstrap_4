@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--First page. User enters email to use with friend account.-->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--for responsive sizing -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>University of Michigan: Friend Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js" type="text/javascript"></script>
+
+</head>
+
+<body style="background-color: #555;">
+
+    <div id="head" class="container header" style="background-color:#00274c;">
+        <img class="banner-img" src="weblogin.png" alt="U of M Icon">
+    </div>
+
+    <div id="main" class="container" style="padding-top: 20px; padding-bottom:20px; background-color: white">
+        <p style="font-size:200%; text-align:center;"><b>Create a Friend Account </b></p>
+
+        <!--carousel start -->
+        <div class="row" style="margin: 0 -15px">
+            <div id="grid" class="col-lg-10 offset-md-1 col-md-10 offset-sm col-12">
+
+                <div class="card bg-light card-body mb-3" style="margin: 0 auto; width: 100%; ">
+                    <p style = "text-align: center;">Start by entering your Email Address or signing in with a social media account</p>
+                    <hr>
+
+                    <!-- Wrapper for slides -->
+                    <div class="container">
+                        <form action="javascript:checkEmail()">
+                            <!-- action="/actionPage.php"  write this php file to handle form data-->
+                            <div class="row">
+                                <div class="col-md-5" style="padding:30px;">
+                                    <a href="https://www.facebook.com/"><span class="social social-facebook"></span><button type="button" class="btn btn-primary btn-lg btn-block" style="font-size : 12px; ">Sign up with Facebook</button></a>
+                                    <!--add links to the pages when available -->
+                                    <br>
+                                    <a href="https://twitter.com/"><span class="social social-twitter"></span><button type="button" class="btn btn-lg btn-info btn-block" style="font-size : 12px;">Sign up with Twitter</button></a>
+                                    <br>
+                                    <a href="https://plus.google.com/"><span class="social social-google-plus"></span><button type="button" class="btn btn-danger btn-lg btn-block" style="font-size : 12px;">Sign up with Google+</button></a>
+                                </div>
+
+                                <div class="col-md-1 d-none d-md-block .d-lg-none" style="margin-top:35px">
+                                    <img src="mobile2.svg" alt="OR">
+                                </div>
+
+                                <div class="col-md visible-xs-block d-md-none" style="text-align:center">
+                                    <img src="mobilelong.svg" alt="OR" style="margin: 0 auto">
+                                </div>
+
+
+                                <div class="col-md-6" style="padding:30px;">
+                                    <div class="form-group" style="width: 100%">
+
+                                        <label for="email">Email Address:</label>
+                                        <input type="email" class="form-control" id="email" size="40" autofocus placeholder="Email" style="margin-bottom: 15px" required>
+                                        <input class="btn btn-primary" style= "float: center; margin:0 auto;" href="registration_personal_info.html" type="submit" value="Continue">
+                                        <p id="warning" style="text-align:center; color:red;">That email is already in use.</p>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!--carousel end-->
+                <hr>
+
+                <p style="text-align: center; font-size: 90%">By your use of these resources, you agree to abide by Responsible Use of Information Resources (SPG 601.07), in addition to all relevant state and federal laws.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="foot" class="container" style="background-color:#333;color:white;padding:10px;text-align: center; font-size: 85%">
+            <p>University of Michigan © 2018 The Regents of the University of Michigan</p>
+        </div>
+    </footer>
+</body>
+
+</html>
